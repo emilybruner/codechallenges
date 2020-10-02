@@ -12,3 +12,19 @@ function firstDuplicate(a) {
      }
      return -1
 }
+
+
+var findDuplicate = function(nums) {
+    const numbers = {};
+    
+    for (let i = 0; i < nums.length; i++){
+        
+        if (numbers[nums[i]] === 'exists') {
+            return nums[i]
+        } else {
+            numbers[nums[i]] = 'exists'
+        }
+        
+    }
+    
+};
