@@ -40,3 +40,7 @@ def remove_kth_from_end(head, k):
     # remove node by reassigning pointers
     prev.next = node.next
     return head
+
+#time complexity o(n)
+#space complexity o(1)
+

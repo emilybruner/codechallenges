@@ -1,19 +1,3 @@
-function firstDuplicate(a) {
-     
-     const dict = {}
-     
-     for (let i=0; i < a.length; i++) {
-         if (dict[a[i]]) {
-             return a[i]
-             break;
-         } else {
-             dict[a[i]] = a[i]
-         }
-     }
-     return -1
-}
-
-
 var findDuplicate = function(nums) {
     const numbers = {};
     
@@ -27,4 +11,16 @@ var findDuplicate = function(nums) {
         
     }
     
+};
+
+
+var findDuplicate = function(nums) {
+    
+    for (let i = 0; i < nums.length; i++){
+        for (let j = 0; j < nums.length; j++){
+            if (i != j && nums[i] === nums[j]){
+                return nums[i]
+            }
+        }
+    }
 };

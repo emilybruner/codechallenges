@@ -2,6 +2,7 @@ function merge_packages(items, limit) {
     // create a hash table we can use to lookup if the difference we need exists 
     hash = {}
     empty = []
+    
     for (let i = 0; i < items.length; i+= 1){
         // the difference represents the value of the other item we need to find
         let difference = limit - items[i]
